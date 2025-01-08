@@ -27,7 +27,6 @@ TARGET_ENABLE_BLUR := true
 PRODUCT_NO_CAMERA := true
 TARGET_DEFAULT_PIXEL_LAUNCHER := false
 
-
 # Inherit device configuration for nabu.
 $(call inherit-product, device/xiaomi/nabu/device.mk)
 
