@@ -21,11 +21,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
 
 DEVICE_CODENAME := nabu
 
-# RisingOS 
-RISING_MAINTAINER="hxfuxyy | NextGen team"
+# crDroid 
 TARGET_ENABLE_BLUR := true
 PRODUCT_NO_CAMERA := true
-TARGET_DEFAULT_PIXEL_LAUNCHER := false
+TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
 
 # Inherit device configuration for nabu.
 $(call inherit-product, device/xiaomi/nabu/device.mk)
@@ -41,6 +41,5 @@ PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildDesc="nabu_global-user 13 TKQ1.221114.001 V816.0.6.0.TKXMIXM release-keys" \
     BuildFingerprint=Xiaomi/nabu_global/nabu:13/TKQ1.221114.001/V816.0.6.0.TKXMIXM:user/release-keys \
-    DeviceProduct=nabu \
-    RisingChipset="Qualcomm Snapdragon 860" \
-    RisingMaintainer="hxfuxyy | NextGen team"
+    DeviceProduct=nabu
+
