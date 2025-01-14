@@ -201,12 +201,12 @@ USE_DEX2OAT_DEBUG := false
 # Display
 PRODUCT_PACKAGES += \
     android.hardware.graphics.composer@2.4-service \
-    hwcomposer.msmnile
+    hwcomposer.qcom
 
 PRODUCT_PACKAGES += \
     android.hardware.graphics.mapper@3.0-impl-qti-display \
     android.hardware.graphics.mapper@4.0-impl-qti-display \
-    gralloc.msmnile \
+    gralloc.qcom \
     vendor.qti.hardware.display.allocator-service \
     vendor.qti.hardware.memtrack-service
 
