@@ -21,10 +21,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
 
 DEVICE_CODENAME := nabu
 
-# Signing keys (Private).
-ifneq ("$(wildcard vendor/harshit/product.mk)", "")
-$(call inherit-product, vendor/harshit/product.mk)
-endif
+# RisingOS
+RISING_MAINTAINER="zxcwsurx"
+TARGET_ENABLE_BLUR := true
+PRODUCT_NO_CAMERA := true
 
 # Inherit device configuration for nabu.
 $(call inherit-product, device/xiaomi/nabu/device.mk)
@@ -40,4 +40,6 @@ PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildDesc="nabu_global-user 13 RKQ1.200826.002 V816.0.1.0.TKXMIXM release-keys" \
     BuildFingerprint=Xiaomi/nabu_global/nabu:13/RKQ1.200826.002/V816.0.1.0.TKXMIXM:user/release-keys \
-    DeviceProduct=$(DEVICE_CODENAME)
+    DeviceProduct=$(DEVICE_CODENAME) \
+    RisingChipset="Qualcomm Snapdragon 860" \
+    RisingMaintainer="zxcwsurx"
