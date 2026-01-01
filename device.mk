@@ -24,6 +24,13 @@ WITHOUT_RESERVED_SIZE=true
 WITH_GMS=true
 endif
 
+# Conditionally inherit Dolby & disable audioFX.
+ifneq ("$(wildcard hardware/dolby/dolby.mk)", "")
+$(warning Enabling Dolby audio effect.)
+$(call inherit-product, hardware/dolby/dolby.mk)
+TARGET_EXCLUDES_AUDIOFX := true
+endif
+
 # Conditionally inherit Viper4AndroidFX & disable audioFX.
 ifneq ("$(wildcard packages/apps/ViPER4AndroidFX/config.mk)", "")
 $(warning Enabling Viper4Android audio effect.)
