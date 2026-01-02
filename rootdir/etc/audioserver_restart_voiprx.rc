@@ -1,3 +1,0 @@
-# Hack allow software volume mixers to work with oss hal.
-on property:sys.boot_completed=1
-    restart audioserver

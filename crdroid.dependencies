@@ -11,10 +11,5 @@
     "repository": "crdroidandroid/android_vendor_xiaomi_nabu",
     "target_path": "vendor/xiaomi/nabu",
     "remote": "crdroid-gitlab"
-  },
-  {
-    "repository": "crdroidandroid/android_hardware_dolby",
-    "target_path": "hardware/dolby",
-    "branch": "16.0-nabu"
   }
 ]
