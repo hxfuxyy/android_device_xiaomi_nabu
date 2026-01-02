@@ -433,7 +433,8 @@ PRODUCT_PACKAGES += \
     init.recovery.qcom.rc \
     init.target.rc \
     init.xiaomi.rc \
-    ueventd.qcom.rc
+    ueventd.qcom.rc \
+    audioserver_restart_voiprx.rc
 
 # IRQ Tuning
 PRODUCT_PACKAGES += \
