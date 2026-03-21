@@ -29,8 +29,7 @@ $(call inherit-product, device/xiaomi/nabu/device.mk)
 TARGET_ENABLE_BLUR := true
 TARGET_DISABLE_MATLOG := true
 INFINITY_BUILD_TYPE := UNOFFICIAL
-INFINITY_MAINTAINER := crsswrld5G
-TARGET_HAS_UDFPS := false
+INFINITY_MAINTAINER := crss5G
 WITH_GAPPS := true
 
 PRODUCT_NAME := infinity_$(DEVICE_CODENAME)
