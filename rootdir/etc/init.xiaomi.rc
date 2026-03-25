@@ -10,3 +10,13 @@ on boot
     chown system system /sys/class/drm/card0-DSI-1/panel_info
     chmod 0744 /sys/class/drm/card0-DSI-1/panel_info
     chmod 0666 /dev/input/event2
+
+service fix_android_data /system/bin/sh /system/bin/init.fix_android_data.sh
+    class late_start
+    user root
+    group root
+    oneshot
+    disabled
+
+on property:sys.boot_completed=1
+    start fix_android_data
