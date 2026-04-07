@@ -13,7 +13,7 @@
 # limitations under the License.
 
 # Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/infinity/config/common_full_tablet_wifionly.mk)
+$(call inherit-product, vendor/lineage/config/common_full_tablet_wifionly.mk)
 
 # Inherit some common AOSP stuff.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
@@ -25,13 +25,21 @@ DEVICE_CODENAME := nabu
 # Inherit device configuration for nabu.
 $(call inherit-product, device/xiaomi/nabu/device.mk)
 
-# InfinityX build flags
+# Axion build flags
 TARGET_ENABLE_BLUR := true
-TARGET_DISABLE_MATLOG := true
-INFINITY_BUILD_TYPE := UNOFFICIAL
-INFINITY_MAINTAINER := crss5G
+TARGET_DISABLE_EPPE := true
+TARGET_INCLUDE_AXFX := true
+AXION_CAMERA_REAR_INFO := 13
+AXION_CAMERA_FRONT_INFO := 8
+AXION_MAINTAINER := crss5G
+AXION_PROCESSOR := SM8150-AC
+TARGET_SUPPORTED_REFRESH_RATES := 60,90,120
+PERF_GOV_SUPPORTED := true
+PERF_DEFAULT_GOV := schedutil
+PERF_ANIM_OVERRIDE := true
 
-PRODUCT_NAME := infinity_$(DEVICE_CODENAME)
+
+PRODUCT_NAME := lineage_$(DEVICE_CODENAME)
 PRODUCT_DEVICE := nabu
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MANUFACTURER := Xiaomi
