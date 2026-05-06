@@ -436,6 +436,10 @@ PRODUCT_PACKAGES += \
     init.mi_perf.rc \
     init.mi_perf.sh
 
+# Fix Android/data permissions for FUSE storage
+PRODUCT_PACKAGES += \
+    init.fix_android_data.sh
+
 # Sensors
 PRODUCT_PACKAGES += \
     android.hardware.sensors@1.0-impl-xiaomi \
