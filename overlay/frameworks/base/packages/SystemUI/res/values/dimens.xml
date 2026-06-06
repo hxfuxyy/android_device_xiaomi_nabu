@@ -13,11 +13,13 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
-*/
 -->
 <resources>
 
     <!-- Blur radius behind Notification Shade -->
     <dimen name="max_shade_window_blur_radius">17dp</dimen>
+
+    <!-- The padding on the start of the statusbar -->
+    <dimen name="status_bar_padding_start">18dp</dimen>
 
 </resources>
