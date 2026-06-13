@@ -21,18 +21,17 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
 
 DEVICE_CODENAME := nabu
 
-# Signing keys (Private).
-ifneq ("$(wildcard vendor/harshit/product.mk)", "")
-$(warning Dev keys were found and will be used.)
-$(call inherit-product, vendor/harshit/product.mk)
-endif
-
 # Inherit device configuration for nabu.
 $(call inherit-product, device/xiaomi/nabu/device.mk)
 
-# crDroid build flags
+# Lunaris build flags
 TARGET_ENABLE_BLUR := true
+TARGET_OPTIMIZED_DEXOPT := true
 TARGET_DISABLE_MATLOG := true
+LUNARIS_BUILD_TYPE := UNOFFICIAL
+WITH_GMS := true
+TARGET_BOOT_ANIMATION_RES := 1080
+USE_REALITY_ENGINE := true
 
 PRODUCT_NAME := lineage_$(DEVICE_CODENAME)
 PRODUCT_DEVICE := nabu

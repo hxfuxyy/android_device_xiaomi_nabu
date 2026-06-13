@@ -565,4 +565,8 @@
         <item>com.twitter.android:0.07</item>
         <item>com.google.android.youtube:0.07</item>
     </string-array>
+    
+    <!-- System Info -->
+    <integer name="config_sysCPUTempMultiplier">1000</integer>    
+    
 </resources>
