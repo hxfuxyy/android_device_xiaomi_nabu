@@ -298,6 +298,7 @@ PRODUCT_PACKAGES += \
 # Health
 PRODUCT_PACKAGES += \
     android.hardware.health-service.qti \
+    android.hardware.health-service.qti_recovery \
     android.hardware.health@2.1.vendor
 
 # HIDL
@@ -468,6 +469,13 @@ PRODUCT_PACKAGES += \
 # Vendor service manager
 PRODUCT_PACKAGES += \
     vndservicemanager
+
+# Vibrator
+PRODUCT_PACKAGES += \
+    vendor.qti.hardware.vibrator.service
+
+PRODUCT_COPY_FILES += \
+    vendor/qcom/opensource/vibrator/excluded-input-devices.xml:$(TARGET_COPY_OUT_VENDOR)/etc/excluded-input-devices.xml
 
 # Wi-Fi
 PRODUCT_PACKAGES += \
